@@ -1,4 +1,4 @@
-LogAggregator is a small .NET library that allows you to aggregate your repeating log outputs (those you usually put in debug level) and generates useful statistics about the data. The library works with log4net although can be easily ported to work with any other provides such as NLog. It does not open any threads but it does use lock object.
+LogAggregator is a lightweight .NET library that allows developer to aggregate repeating log outputs (those usually put in debug level) and generates useful statistics about the data. The library works with log4net although can be easily ported to work with any other provides such as NLog. It does not open any threads BUT it does use lock object.
 
 Typical usage scenario:
 
@@ -10,9 +10,9 @@ One option is to have Debug level print to file that you can look and see how ma
 
 Cache ------------------------------------
 
-Cache Hit 400 (40%)
+Cache Hit   400 (40%)
 
-Cache Miss 600 (60%)
+Cache Miss  600 (60%)
 
 Scenario #2
 
@@ -22,9 +22,9 @@ Example report in such case:
 
 QueryPerformance -------------------------------------
 
-Query1 20 50%, [Stats: 20 calls, first 22, last 17, average 21 ,max 22, min 14]
+Query1  20 50%, [Stats: 20 calls, first 22, last 17, average 21 ,max 22, min 14]
 
-Query2 20 50%, [Stats: 20 calls, first 202, last 133, average 199 ,max 202, min 122]
+Query2  20 50%, [Stats: 20 calls, first 202, last 133, average 199 ,max 202, min 122]
 
 PLEASE NOTE
 
