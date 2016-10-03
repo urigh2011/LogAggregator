@@ -1,4 +1,6 @@
-.c
+*.vspscc
+*_i.c
+*_p.c
 *.ncb
 *.suo
 *.bak
@@ -11,3 +13,4 @@
 obj/
 [Rr]elease*/
 _ReSharper*/
+[bin]
